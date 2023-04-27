@@ -24,9 +24,12 @@ with open('Name_and_GWA.txt', 'r') as input_file:
 
     # Iterate over each line 
     for line in input_file:
-        
+
         # Split the line into the student name and GWA
         name, gwa = line.strip().split(',')
 
         # Convert the GWA to a float
         gwa = float(gwa)
+
+        # Compare the GWA to the current highest GWA
+        if gwa > highest_gwa:
