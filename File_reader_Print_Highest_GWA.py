@@ -9,3 +9,8 @@ import pyfiglet
 
 print(" \033[95mHello! I hope you're having a great day!!! ".center(70, "="))
 print("")
+
+# Ask for the name of the user
+user_name = input("\033[92mMay I know your name? \033[0m")
+print("\n\033[94mThank you", user_name,  "you may now proceed to the program!")
+print("")
