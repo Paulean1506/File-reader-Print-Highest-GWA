@@ -37,3 +37,13 @@ with open('Name_and_GWA.txt', 'r') as input_file:
             # Update the highest GWA and student name
             highest_gwa = gwa
             highest_student = name
+
+# Column for the names and GWA
+print("\033[93mAmong the list of students:")
+with open("Name_and_GWA.txt") as column_file:
+  print("{:<25}{:<25}".format("\nStudent Name:", "  GWA:\n"))
+  for line in column_file:
+    name, gwa = line.split(",")
+    column_name = name
+    column_gwa = gwa
+    print("{:<25}{:<25}".format(column_name, column_gwa))
