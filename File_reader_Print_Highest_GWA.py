@@ -19,8 +19,7 @@ print("")
 with open('Name_and_GWA.txt', 'r') as input_file:
 
     # Initialize the highest GWA and student name
-    highest_gwa = 0.0
-    highest_student = ''
+    highest_gwa = 5.00
 
     # Iterate over each line 
     for line in input_file:
@@ -39,10 +38,10 @@ with open('Name_and_GWA.txt', 'r') as input_file:
             highest_student = name
 
 # Print the name of the student who got the highest GWA
-    print("The student with the highest GWA is ", name, "with a GWA of ", gwa)  
+    print("\033[95mThe student with the highest GWA is", highest_student, "with a GWA of ", highest_gwa)  
 
 # Column for the names and GWA
-print("\033[93mAmong the list of students:")
+print("\n\033[93mAmong the list of students:")
 with open("Name_and_GWA.txt") as column_file:
   print("{:<25}{:<25}".format("\nStudent Name:", "  GWA:\n"))
   for line in column_file:
