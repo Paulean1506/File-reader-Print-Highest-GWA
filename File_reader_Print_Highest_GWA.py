@@ -19,7 +19,7 @@ print("")
 with open('Name_and_GWA.txt', 'r') as input_file:
 
     # Initialize the highest GWA and student name
-    highest_gwa = 1.00
+    highest_gwa = 0.0
     highest_student = ''
 
     # Iterate over each line 
@@ -32,11 +32,14 @@ with open('Name_and_GWA.txt', 'r') as input_file:
         gwa = float(gwa)
 
         # Compare the GWA to the current highest GWA
-        if gwa > highest_gwa:
+        if gwa < highest_gwa:
 
             # Update the highest GWA and student name
             highest_gwa = gwa
             highest_student = name
+
+# Print the name of the student who got the highest GWA
+    print("The student with the highest GWA is ", name, "with a GWA of ", gwa)  
 
 # Column for the names and GWA
 print("\033[93mAmong the list of students:")
@@ -48,5 +51,3 @@ with open("Name_and_GWA.txt") as column_file:
     column_gwa = gwa
     print("{:<25}{:<25}".format(column_name, column_gwa))
 
-# Print the name of the student who got the highest GWA
-    print(f'\033[91mThe student with the highest GWA is {highest_student} with a GWA of {highest_gwa}.')
