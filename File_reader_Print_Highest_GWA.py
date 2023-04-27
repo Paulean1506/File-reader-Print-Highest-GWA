@@ -50,3 +50,9 @@ with open("Name_and_GWA.txt") as column_file:
     column_gwa = gwa
     print("{:<25}{:<25}".format(column_name, column_gwa))
 
+# Program is completed
+from termcolor import colored
+from pyfiglet import Figlet
+f = Figlet(font = "banner3-d")
+print(colored(f.renderText('Thank you!'), 'red'))
+
