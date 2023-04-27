@@ -47,3 +47,6 @@ with open("Name_and_GWA.txt") as column_file:
     column_name = name
     column_gwa = gwa
     print("{:<25}{:<25}".format(column_name, column_gwa))
+
+# Print the name of the student who got the highest GWA
+    print(f'\033[91mThe student with the highest GWA is {highest_student} with a GWA of {highest_gwa}.')
