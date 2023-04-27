@@ -1,6 +1,6 @@
 # Paulean Marguerette F. Parrish
 # Bscpe 1-4
-# Problem no. 1
+# Problem no. 2
 # Write a Python program that read a file containing the name of 20 students together with their GWA. 
 # The program will outputs the name of the student who got the highest GWA (including the GWA).
 
