@@ -33,3 +33,7 @@ with open('Name_and_GWA.txt', 'r') as input_file:
 
         # Compare the GWA to the current highest GWA
         if gwa > highest_gwa:
+
+            # Update the highest GWA and student name
+            highest_gwa = gwa
+            highest_student = name
