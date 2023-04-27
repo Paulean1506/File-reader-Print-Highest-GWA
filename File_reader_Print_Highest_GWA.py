@@ -17,3 +17,7 @@ print("")
 
 # Open the Name_and_GWA.txt and read the file
 with open('Name_and_GWA.txt', 'r') as input_file:
+
+    # Initialize the highest GWA and student name
+    highest_gwa = 1.00
+    highest_student = ''
